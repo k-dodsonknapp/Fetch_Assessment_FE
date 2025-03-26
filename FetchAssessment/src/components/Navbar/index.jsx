@@ -1,15 +1,13 @@
 import React from "react";
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuList,
-} from "../ui/NavigationMenu";
-import { cn } from "@/lib/utils";
-import ModeToggle from "@/components/ui/ModeToggle";
-import { Link } from "react-router";
-import { Separator } from "@/components/ui/Separator";
 
-function Navbar() {
+import { cn } from "@/lib/utils";
+import { Link } from "react-router";
+import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "../ui/NavigationMenu";
+import ModeToggle from "../ui/ModeToggle";
+import LogoutButton from "../ui/LogoutButton";
+import { Separator } from "../ui/Separator";
+
+export default function Navbar() {
   return (
     <div className={cn("sticky top-0 z-50 bg-opacity-70 ")}>
       <nav className="flex items-center justify-between p-4">
@@ -22,14 +20,14 @@ function Navbar() {
               <NavigationMenuItem>
                 <ModeToggle />
               </NavigationMenuItem>
-              <NavigationMenuItem>{/* <LogoutButton /> */}</NavigationMenuItem>
+              <NavigationMenuItem>
+                <LogoutButton />
+              </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
         </div>
-       </nav>
-       <Separator />
+      </nav>
+      <Separator />
     </div>
   );
 }
-
-export default Navbar;
