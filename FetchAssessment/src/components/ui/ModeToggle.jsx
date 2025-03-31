@@ -37,7 +37,7 @@ export function ModeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className=" h-10 w-10 rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-all ease-in-out duration-100"
+      className="h-10 w-10 rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-all ease-in-out duration-100"
     >
       <Sun
         className={`h-[1.1rem] w-[1.2rem] transition-all absolute left-1/2 top-[46%] -translate-x-1/2 -translate-y-1/2

@@ -31,7 +31,7 @@ import React, { useEffect, useState } from "react";
  * };
  */
 
-function useFetch(path = null, defaultOptions = {}) {
+export default function useFetch(path = null, defaultOptions = {}) {
   const [urlPath, setUrlPath] = useState(path);
   const [baseUrl, setBaseUrl] = useState(null);
   const [options, setOptions] = useState({
@@ -89,4 +89,3 @@ function useFetch(path = null, defaultOptions = {}) {
   return [{ data, loading, error }, updateFetch];
 }
 
-export default useFetch;

@@ -27,7 +27,7 @@ function LogoutButton() {
 
   return (
     <Button
-      className="relative h-10 w-15 rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-all ease-in-out duration-100"
+      className="text-inherit relative h-10 w-15 rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-all ease-in-out duration-100"
       onClick={handleLogout}
     >
       Logout

@@ -26,12 +26,12 @@ export default function Login() {
         <div className="flex justify-center gap-2 md:justify-start">
           <a
             href="TODO direct to about page? remove 'pointer-events-none'"
-            className="flex items-center gap-2 font-normal text-lg pointer-events-none"
+            className="flex items-center gap-6 font-normal text-lg pointer-events-none"
           >
             <div className="flex h-10 w-10 items-center justify-center rounded-md bg-primary text-primary-foreground">
               <GalleryVerticalEnd className="size-6" />
             </div>
-            Puppy Finder
+            Furever Friend
           </a>
         </div>
         <div className="flex flex-1 items-center justify-center">
